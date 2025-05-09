@@ -32,3 +32,7 @@ bollen.penup()
 bollen.goto(0, 0)
 bollen.dx = 5
 bollen.dy = 5
+
+# Vänta på klick för att avsluta
+screen.exitonclick()
+
