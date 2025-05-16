@@ -109,6 +109,13 @@ while game_is_on:
         right_score.clear()
         right_score.write(r_score, align="center", font=("Courier", 80, "normal"))
 
+     # Kollision med spelare 2
+        if bollen.distance(spelfigur2) < 50 and bollen.xcor() > 360:
+            bollen.dx *= -1
+    
+        # Kollision med spelare 1
+        if bollen.distance(spelfigur1) < 50 and bollen.xcor() < -360:
+            bollen.dx *= -1
 
 # Vänta på klick för att avsluta
 screen.exitonclick()
